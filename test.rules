@@ -20,3 +20,5 @@ alert tcp any any -> any 443 (msg:"github.com access"; flow:to_server,establishe
 alert tcp any any -> any 443 (msg:"blizzard.com access"; flow:to_server,established; tls_sni; content:"blizzard.com"; sid:10020; rev:1;)
 alert tcp any any -> any 443 (msg:"namu.wiki access"; flow:to_server,established; tls_sni; content:"namu.wiki"; sid:10021; rev:1;)
 alert tcp any any -> any 443 (msg:"yonsei.ac.kr access"; flow:to_server,established; tls_sni; content:"yonsei.ac.kr"; sid:10022; rev:1;)
+alert tcp any any -> any 443 (msg:"hackctf access"; flow:to_server,established; tls_sni; content:"ctf.j0n9hyun.xyz"; sid:10023; rev:1;)
+alert tcp any any -> any 443 (msg:"duckduckgo access"; flow:to_server,established; tls_sni; content:"duckduckgo.com"; sid:10024; rev:1;)
